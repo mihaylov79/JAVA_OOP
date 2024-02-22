@@ -1,4 +1,4 @@
-package WorkingWithAbstraction;
+package WorkingWithAbstraction.CardSuit;
 
 public enum CardSuit {
 
