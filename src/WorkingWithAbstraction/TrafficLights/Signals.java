@@ -6,7 +6,7 @@ public enum Signals {
     GREEN,
     YELLOW;
 
-    public static void changeSignals(Signals[] signals){
+    static void changeSignals(Signals[] signals){
 
         for (int i = 0; i < signals.length; i++) {
 
@@ -25,7 +25,7 @@ public enum Signals {
     }
 
 
-    public static void printSignals(Signals[] signals){
+    static void printSignals(Signals[] signals){
 
         for (Signals signal: signals){
 
