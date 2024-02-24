@@ -20,7 +20,7 @@ public class Main {
 
         long sumOfCollectedStars = 0;
 
-        sumOfCollectedStars = CollectAllPossibleStars(command, scanner, matrix, sumOfCollectedStars);
+        sumOfCollectedStars = CrossTheGalaxyAndCollectAllPossibleStars(command, scanner, matrix, sumOfCollectedStars);
 
         System.out.println(sumOfCollectedStars);
             

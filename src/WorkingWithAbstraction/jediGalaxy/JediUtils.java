@@ -49,7 +49,7 @@ public class JediUtils {
 
     }
 
-    static long CollectAllPossibleStars(String command, Scanner scanner, int[][] matrix, long sumOfCollectedStars) {
+    static long CrossTheGalaxyAndCollectAllPossibleStars(String command, Scanner scanner, int[][] matrix, long sumOfCollectedStars) {
         while (!command.equals("Let the Force be with you")) {
 
             int[] evilPos = getPositions(scanner.nextLine());
