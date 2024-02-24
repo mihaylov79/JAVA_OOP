@@ -2,7 +2,7 @@ package WorkingWithAbstraction.jediGalaxy;
 
 import java.util.Scanner;
 
-import static WorkingWithAbstraction.jediGalaxy.JediUtils.*;
+import static WorkingWithAbstraction.jediGalaxy.JediMethods.*;
 
 public class Main {
     public static void main(String[] args) {

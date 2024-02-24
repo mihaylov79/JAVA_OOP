@@ -3,9 +3,9 @@ package WorkingWithAbstraction.jediGalaxy;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class JediUtils {
+public class JediMethods {
 
-    public JediUtils() {
+    public JediMethods() {
     }
 
     public static void fillTheMatrix(int rows, int cols, int[][] matrix) {
