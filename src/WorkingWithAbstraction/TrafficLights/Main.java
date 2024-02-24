@@ -3,8 +3,7 @@ package WorkingWithAbstraction.TrafficLights;
 import java.util.Arrays;
 import java.util.Scanner;
 
-import static WorkingWithAbstraction.TrafficLights.Signals.changeSignals;
-import static WorkingWithAbstraction.TrafficLights.Signals.printSignals;
+import static WorkingWithAbstraction.TrafficLights.Signals.*;
 
 public class Main {
     public static void main(String[] args) {
