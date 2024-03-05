@@ -1,6 +1,9 @@
 package IntefacesAndAbstraction.Person;
 
-public class Citizen implements Person,Identifiable,Birthable  {
+import IntefacesAndAbstraction.MultipleImplementations.Birthable;
+import IntefacesAndAbstraction.MultipleImplementations.Identifiable;
+
+public class Citizen implements Person, Identifiable, Birthable {
 
     private String name;
     private int age;

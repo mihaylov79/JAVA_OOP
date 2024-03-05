@@ -1,4 +1,4 @@
-package IntefacesAndAbstraction.Person;
+package IntefacesAndAbstraction.MultipleImplementations;
 
 public interface Birthable {
 

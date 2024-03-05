@@ -1,5 +1,8 @@
 package IntefacesAndAbstraction.Person;
 
+import IntefacesAndAbstraction.MultipleImplementations.Birthable;
+import IntefacesAndAbstraction.MultipleImplementations.Identifiable;
+
 import java.lang.reflect.Method;
 import java.util.Arrays;
 import java.util.Scanner;
