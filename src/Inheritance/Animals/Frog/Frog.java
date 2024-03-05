@@ -1,4 +1,6 @@
-package Inheritance.Animals;
+package Inheritance.Animals.Frog;
+
+import Inheritance.Animals.Animal;
 
 public class Frog extends Animal {
 

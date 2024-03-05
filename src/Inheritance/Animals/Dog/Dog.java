@@ -1,4 +1,6 @@
-package Inheritance.Animals;
+package Inheritance.Animals.Dog;
+
+import Inheritance.Animals.Animal;
 
 public class Dog extends Animal {
 

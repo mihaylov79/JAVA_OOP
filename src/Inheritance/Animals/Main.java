@@ -1,5 +1,11 @@
 package Inheritance.Animals;
 
+import Inheritance.Animals.Cat.Cat;
+import Inheritance.Animals.Cat.Kitten;
+import Inheritance.Animals.Cat.Tomcat;
+import Inheritance.Animals.Dog.Dog;
+import Inheritance.Animals.Frog.Frog;
+
 import java.util.Scanner;
 
 public class Main {
@@ -12,7 +18,6 @@ public class Main {
         String commandInput = kbInput.nextLine();
 
         while(!"Beast!".equalsIgnoreCase(commandInput)){
-
 
             try{
             switch (commandInput){
@@ -50,6 +55,8 @@ public class Main {
 
             }catch (IllegalArgumentException exception){
                 System.out.println(exception.getMessage());
+            } catch (IndexOutOfBoundsException exception) {
+                System.out.println("Invalid input!");
             }
 
 
