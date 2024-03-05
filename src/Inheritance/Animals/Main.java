@@ -18,14 +18,14 @@ public class Main {
             switch (commandInput){
 
                 case "Cat":
-                String[] info = kbInput.nextLine().split("\\s+");
-                Cat cat = new Cat(info[0], Integer.parseInt(info[1]), info[2]);
+                    String[] info = kbInput.nextLine().split("\\s+");
+                    Cat cat = new Cat(info[0], Integer.parseInt(info[1]), info[2]);
                     System.out.println(cat);
                     break;
 
                 case "Dog":
-                info = kbInput.nextLine().split("\\s+");
-                Dog dog = new Dog(info[0], Integer.parseInt(info[1]), info[2]);
+                    info = kbInput.nextLine().split("\\s+");
+                    Dog dog = new Dog(info[0], Integer.parseInt(info[1]), info[2]);
                     System.out.println(dog);
                     break;
 

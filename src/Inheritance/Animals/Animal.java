@@ -50,7 +50,10 @@ public class Animal {
 
     @Override
     public String toString() {
-        return String.format("%s%n%s %d %s%n%s",this.getClass().getSimpleName(),
+        return String.format("%s%n" +
+                             "%s %d %s%n" +
+                             "%s",
+                                this.getClass().getSimpleName(),
                                 this.name,
                                 this.age,
                                 this.gender,
