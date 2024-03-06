@@ -1,6 +1,6 @@
 package IntefacesAndAbstraction;
 
-import IntefacesAndAbstraction.FoodStorage.Rebel;
+import IntefacesAndAbstraction.FoodShortage.Rebel;
 import IntefacesAndAbstraction.Person.Citizen;
 
 import java.util.*;
@@ -14,7 +14,7 @@ public class Main {
         int boughtFood = 0;
 
         Map<String,Citizen> citizens = new LinkedHashMap<>();
-        Map<String,Rebel> rebels = new LinkedHashMap<>();
+        Map<String, Rebel> rebels = new LinkedHashMap<>();
 
         int n = Integer.parseInt(kbInput.nextLine());
 
@@ -31,9 +31,6 @@ public class Main {
 
                 citizens.put(citizen.getName(),citizen);
             }
-
-
-
         }
 
         String buyerName = kbInput.nextLine();
@@ -43,8 +40,10 @@ public class Main {
 
             if (rebels.containsKey(buyerName)){
                 rebels.get(buyerName).buyFood();
+
             }else if (citizens.containsKey(buyerName)){
                 citizens.get(buyerName).buyFood();
+
             }
 
             buyerName = kbInput.nextLine();

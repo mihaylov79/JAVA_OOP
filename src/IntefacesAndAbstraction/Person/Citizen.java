@@ -1,11 +1,10 @@
 package IntefacesAndAbstraction.Person;
 
-import IntefacesAndAbstraction.FoodStorage.Buyer;
-import IntefacesAndAbstraction.FoodStorage.Rebel;
+import IntefacesAndAbstraction.FoodShortage.Buyer;
 import IntefacesAndAbstraction.MultipleImplementations.Birthable;
 import IntefacesAndAbstraction.MultipleImplementations.Identifiable;
 
-public class Citizen implements Person, Identifiable, Birthable, Buyer {
+public class Citizen implements Person, Identifiable, Buyer, Birthable {
 
     private String name;
     private int age;

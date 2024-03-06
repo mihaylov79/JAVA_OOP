@@ -1,4 +1,4 @@
-package IntefacesAndAbstraction.FoodStorage;
+package IntefacesAndAbstraction.FoodShortage;
 
 public class Rebel implements Buyer{
 
