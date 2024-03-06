@@ -1,16 +1,14 @@
-package IntefacesAndAbstraction.Person;
+package IntefacesAndAbstraction;
 
 import IntefacesAndAbstraction.BirthdayCelebrations.Pet;
 import IntefacesAndAbstraction.MultipleImplementations.Birthable;
-import IntefacesAndAbstraction.MultipleImplementations.Identifiable;
+import IntefacesAndAbstraction.Person.Citizen;
 
-import java.lang.reflect.Method;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
-public class Main {
+public class Main_3 {
     public static void main(String[] args) {
         Scanner kbInput = new Scanner(System.in);
 
@@ -41,7 +39,8 @@ public class Main {
         }
         String year = kbInput.nextLine();
 
-        list.stream().filter(birthable -> birthable.getBirthDate().contains(year)).forEach(System.out::println);
+        list.stream().filter(birthable -> birthable.getBirthDate().contains(year))
+                .forEach(birthable -> System.out.println(birthable.getBirthDate()));
         }
     }
 

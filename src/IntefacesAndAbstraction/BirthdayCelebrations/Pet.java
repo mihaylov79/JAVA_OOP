@@ -20,8 +20,8 @@ public class Pet implements Birthable {
         return birthDate;
     }
 
-    @Override
-    public String toString() {
-        return birthDate;
-    }
+//    @Override
+//    public String toString() {
+//        return birthDate;
+//    }
 }
