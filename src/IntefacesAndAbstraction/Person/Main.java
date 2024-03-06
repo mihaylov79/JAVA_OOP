@@ -1,34 +1,48 @@
 package IntefacesAndAbstraction.Person;
 
+import IntefacesAndAbstraction.BirthdayCelebrations.Pet;
 import IntefacesAndAbstraction.MultipleImplementations.Birthable;
 import IntefacesAndAbstraction.MultipleImplementations.Identifiable;
 
 import java.lang.reflect.Method;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Class[] citizenInterfaces = Citizen.class.getInterfaces();
-        if (Arrays.asList(citizenInterfaces).contains(Birthable.class)
-                && Arrays.asList(citizenInterfaces).contains(Identifiable.class)) {
-            Method[] methods = Birthable.class.getDeclaredMethods();
-            Method[] methods1 = Identifiable.class.getDeclaredMethods();
-            Scanner scanner = new Scanner(System.in);
-            String name = scanner.nextLine();
-            int age = Integer.parseInt(scanner.nextLine());
-            String id = scanner.nextLine();
-            String birthDate = scanner.nextLine();
-            Identifiable identifiable = new Citizen(name,age,id,birthDate);
-            Birthable birthable = new Citizen(name,age,id,birthDate);
-            System.out.println(methods.length);
-            System.out.println(methods[0].getReturnType().getSimpleName());
-            System.out.println(methods1.length);
-            System.out.println(methods1[0].getReturnType().getSimpleName());
+        Scanner kbInput = new Scanner(System.in);
+
+        List<Birthable> list = new ArrayList<>();
+
+        String [] commandInput = kbInput.nextLine().split("\\s+");
+
+
+        while (!"End".equalsIgnoreCase(commandInput[0])){
+
+            String command = commandInput[0];
+
+            switch (command){
+
+                case "Citizen":
+                    Citizen citizen = new Citizen(commandInput[1], Integer.parseInt(commandInput[2]),
+                                        commandInput[3],commandInput[4]);
+                    list.add(citizen);
+                    break;
+
+                case "Pet":
+                    Pet pet = new Pet(commandInput[1], commandInput[2] );
+                    list.add(pet);
+                    break;
+            }
+
+            commandInput = kbInput.nextLine().split("\\s+");
+        }
+        String year = kbInput.nextLine();
+
+        list.stream().filter(birthable -> birthable.getBirthDate().contains(year)).forEach(System.out::println);
         }
     }
 
 
-
-
-}

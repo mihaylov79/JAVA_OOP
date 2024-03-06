@@ -35,4 +35,8 @@ public class Citizen implements Person, Identifiable, Birthable {
     }
 
 
+    @Override
+    public String toString() {
+        return birthDate;
+    }
 }
