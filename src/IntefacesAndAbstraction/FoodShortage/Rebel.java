@@ -34,4 +34,9 @@ public class Rebel implements Buyer{
     public int getFood() {
         return food;
     }
+
+    @Override
+    public String toString(){
+        return String.format("%s %d %s",this.name,this.age,this.group);
+    }
 }

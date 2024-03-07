@@ -47,8 +47,14 @@ public class Citizen implements Person, Identifiable, Buyer, Birthable {
         return food;
     }
 
-//    @Override
-//    public String toString() {
-//        return birthDate;
-//    }
+
+@Override
+    public String toString(){
+        return String.format("%s %d %s %s",
+                                    this.name,
+                                    this.age,
+                                    this.id,
+                                    this.birthDate);
+    }
+
 }
