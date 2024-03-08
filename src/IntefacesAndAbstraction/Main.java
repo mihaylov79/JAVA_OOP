@@ -49,9 +49,9 @@ public class Main {
             buyerName = kbInput.nextLine();
         }
 
-
         for (Rebel rebel: rebels.values()){
            boughtFood += rebel.getFood();
+
         }
         for (Citizen citizen: citizens.values()){
             boughtFood += citizen.getFood();

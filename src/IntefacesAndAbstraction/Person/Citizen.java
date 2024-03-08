@@ -20,19 +20,19 @@ public class Citizen implements Person, Identifiable, Buyer, Birthable {
         this.food = 0;
     }
 
-
+    @Override
     public String getName() {
         return name;
     }
-
+    @Override
     public int getAge() {
         return age;
     }
-
+    @Override
     public String getId() {
         return id;
     }
-
+    @Override
     public String getBirthDate() {
         return birthDate;
     }
@@ -47,8 +47,5 @@ public class Citizen implements Person, Identifiable, Buyer, Birthable {
         return food;
     }
 
-//    @Override
-//    public String toString() {
-//        return birthDate;
-//    }
+
 }

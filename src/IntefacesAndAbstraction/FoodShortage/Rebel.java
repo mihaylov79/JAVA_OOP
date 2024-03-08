@@ -1,6 +1,8 @@
 package IntefacesAndAbstraction.FoodShortage;
 
-public class Rebel implements Buyer{
+import IntefacesAndAbstraction.Person.Person;
+
+public class Rebel implements Person, Buyer{
 
     private String name;
     private int age;
