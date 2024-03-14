@@ -10,7 +10,7 @@ public class Main {
 
         String input = kbInput.nextLine();
 
-        while ("1".equalsIgnoreCase(input)){
+        while (!"end".equalsIgnoreCase(input)){
             Tickets ticket = Tickets.getRandom();
             System.out.println(ticket.getTicket());
 
