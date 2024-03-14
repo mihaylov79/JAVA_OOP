@@ -16,7 +16,7 @@ public enum Tickets {
     TICKET11 ("COFFEE - PEACE and JUSTICE for all!"),
     TICKET12 ("COFFEINATING ...... Please wait!");
 
-    private  String ticket;
+    private final String ticket;
 
     Tickets(String ticket) {
         this.ticket = ticket;
@@ -26,7 +26,7 @@ public enum Tickets {
         return ticket;
     }
 
-    private static Random random = new Random();
+    private static final Random random = new Random();
 
     public static Tickets getRandom(){
         return values()[random.nextInt(values().length)];
