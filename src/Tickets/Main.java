@@ -11,8 +11,8 @@ public class Main {
         String input = kbInput.nextLine();
 
         while (!"end".equalsIgnoreCase(input)){
-            Tickets ticket = Tickets.getRandom();
-            System.out.println(ticket.getTicket());
+           // Tickets ticket = Tickets.getRandom();
+            System.out.println(Tickets.getRandom().getTicket());
 
             input = kbInput.nextLine();
         }
