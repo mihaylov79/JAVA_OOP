@@ -1,0 +1,35 @@
+package DesignPatterns.Factory;
+
+
+public abstract class Cake implements CakeInterface {
+    public double diameter;
+    public double price;
+    public int pieces;
+
+    public Cake(double diameter, double price, int pieces) {
+        this.diameter = diameter;
+        this.price = price;
+        this.pieces = pieces;
+
+
+    }
+
+    @Override
+    public void prepare() {
+        System.out.printf("%s Preparing.....%n ", getClass().getSimpleName());
+
+    }
+
+    @Override
+    public void bake() {
+        System.out.printf("%s Baking.....%n ", getClass().getSimpleName());
+
+    }
+
+    @Override
+    public void box() {
+
+        System.out.printf("%s Packaging.....%n ", getClass().getSimpleName());
+
+    }
+}
